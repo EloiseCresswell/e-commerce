@@ -86,13 +86,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: #e8f5e9;
 }
 
 a {
@@ -104,4 +99,11 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+h1 {
+  font-weight: 200;
+}
+h2 {
+  font-weight: 100;
 }

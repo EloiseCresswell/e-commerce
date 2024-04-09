@@ -1,0 +1,88 @@
+.visibleProducts {
+  background-color: #738783;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 50px 80px;
+  width: 1400px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.visibleProductsTwo {
+  background-color: #738783;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px 80px;
+  width: 1400px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.plantPots {
+  display: flex;
+  justify-content: center;
+}
+
+.visibleProducts li,
+.visibleProductsTwo li {
+  color: white;
+  font-size: 25px;
+}
+
+.showMoreButton {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.addToBasket {
+  background-image: url("https://static.thenounproject.com/png/1287400-200.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.cartDivider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterPlantPots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.filters {
+  height: 600px;
+  background-color: pink;
+  padding: 10px 10px;
+  max-width: 200px;
+}
+
+.productImage {
+  background-color: #738783;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.pinkButton {
+  background-color: pink;
+}
+
+.filtersDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

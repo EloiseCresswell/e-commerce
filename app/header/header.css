@@ -1,0 +1,81 @@
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 60px;
+}
+
+.eloise_houseplants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 30px;
+}
+
+.header_top button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.header_bottom ul {
+  list-style: none;
+}
+
+.showList {
+  margin-top: 5px;
+  width: 200px;
+  height: 50px;
+  background-color: #fdeeee;
+}
+
+.basketButton {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://static.thenounproject.com/png/1287403-200.png");
+  background-size: cover;
+}
+
+.searchButton {
+  background-image: url("https://static.thenounproject.com/png/2946467-200.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.searchInput {
+  height: 50px;
+  width: auto;
+  color: black;
+  background-color: white;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-left: 30px;
+}
+
+.searchBar {
+  display: flex;
+}
+
+.basketDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.basketShowing {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+}

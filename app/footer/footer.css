@@ -1,0 +1,40 @@
+.footerTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin: 30px;
+}
+
+.firstList {
+  font-size: 1.3rem;
+}
+
+.emailInput {
+  height: 50px;
+  width: 300px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-left: 30px;
+}
+
+.emailDiv {
+  display: flex;
+  margin-top: 40px;
+}
+
+.emailImage {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.howToPay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.howToPay h3 {
+  font-weight: 100;
+}

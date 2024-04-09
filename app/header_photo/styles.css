@@ -1,0 +1,31 @@
+.headerImage {
+  position: relative;
+  dispay: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.headerImageText {
+  position: absolute;
+  text-align: center;
+  text-wrap: wrap;
+  top: 100px;
+  right: 200px;
+  width: 600px;
+}
+
+.headerImage h1 {
+  font-weight: 100;
+  color: white;
+  font-size: 4rem;
+}
+.headerImage h2 {
+  margin-top: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 50;
+}
+
+.headerImage {
+  margin: 0;
+}
