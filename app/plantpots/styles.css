@@ -1,5 +1,4 @@
 .visibleProducts {
-  background-color: #738783;
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
@@ -10,7 +9,6 @@
 }
 
 .visibleProductsTwo {
-  background-color: #738783;
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
@@ -26,7 +24,7 @@
 
 .visibleProducts li,
 .visibleProductsTwo li {
-  color: white;
+  color: black;
   font-size: 25px;
 }
 
@@ -63,9 +61,10 @@
 
 .filters {
   height: 600px;
-  background-color: pink;
   padding: 10px 10px;
+  margin-left: 70px;
   max-width: 200px;
+  border: 2px black solid;
 }
 
 .productImage {
@@ -85,4 +84,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.plantPotsTitle {
+  margin-left: 60px;
+}
+
+.filterColoursDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.headingColour {
+  font-weight: 100;
+  margin-top: 10px;
 }

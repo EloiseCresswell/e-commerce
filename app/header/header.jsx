@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import React from "react";
+import Image from "next/image";
 import "./header.css";
 import Link from "next/link";
 import Headerlinks from "./header_links.jsx";
@@ -43,6 +44,7 @@ export default function Header() {
             onClick={() => setSearchBar(!searchBar)}
           ></button>
         </div>
+
         <Link href="/">
           <div className="eloise_houseplants">
             <h1>Eloise's Houseplants</h1> <h2>Creating Happy Spaces</h2>
@@ -75,6 +77,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+
       <div className="header_bottom">
         <Headerlinks />
       </div>

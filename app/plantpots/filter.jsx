@@ -16,6 +16,7 @@ export default function Filter({
   setBackgroundColour,
 }) {
   const handleClick = () => {
+    console.log("i've been clicked");
     // Extracting the color from the text prop
     setShowFilterArray(true);
     setShowProducts(true);
@@ -24,14 +25,29 @@ export default function Filter({
       color = "";
       setBackgroundColour(false);
     } else {
-      color = text.toLowerCase().replace(/\s/g, "");
+      color = text;
     }
     // Calling fetchPotsData function with the extracted color
     fetchPotsData(color);
   };
   return (
     <>
-      <button onClick={handleClick}>{text}</button>
+      <button
+        onClick={handleClick}
+        style={
+          text === "Reset"
+            ? null
+            : {
+                backgroundColor: text,
+                width: 20,
+                height: 20,
+                borderRadius: 30,
+                border: "none",
+              }
+        }
+      >
+        {text === "Reset" ? "Reset" : null}
+      </button>
     </>
   );
 }

@@ -97,25 +97,42 @@ export default function Trial() {
 
   return (
     <>
-      <h1>Our Range of Plant Pots</h1>
+      <div className="plantPotsTitle">
+        <h1>Plant Pots</h1>
+        <p>
+          Revamp your home with our bespoke plant pots, perfect for any
+          houseplant! With our exclusive design and handmade finishes, our
+          unique pieces are a must in every home
+        </p>
+      </div>
       <div className="filterPlantPots">
         <div className="filters">
           <h1>Filters</h1>
           <div className="filtersDiv">
-            <Filter
-              fetchPotsData={fetchPotsData}
-              text="Blue pots"
-              setShowProducts={setShowProducts}
-              setShowFilterArray={setShowFilterArray}
-              setBackgroundColour={setBackgroundColour}
-            />
-            <Filter
-              fetchPotsData={fetchPotsData}
-              text="Red pots"
-              setShowProducts={setShowProducts}
-              setShowFilterArray={setShowFilterArray}
-              setBackgroundColour={setBackgroundColour}
-            />
+            <h4 className="headingColour">Colour</h4>
+            <div className="filterColoursDiv">
+              <Filter
+                fetchPotsData={fetchPotsData}
+                text="blue"
+                setShowProducts={setShowProducts}
+                setShowFilterArray={setShowFilterArray}
+                setBackgroundColour={setBackgroundColour}
+              />
+              <Filter
+                fetchPotsData={fetchPotsData}
+                text="red"
+                setShowProducts={setShowProducts}
+                setShowFilterArray={setShowFilterArray}
+                setBackgroundColour={setBackgroundColour}
+              />
+              <Filter
+                fetchPotsData={fetchPotsData}
+                text="green"
+                setShowProducts={setShowProducts}
+                setShowFilterArray={setShowFilterArray}
+                setBackgroundColour={setBackgroundColour}
+              />
+            </div>
             <FilterPrice
               setShowProducts={setShowProducts}
               setShowFilterArray={setShowFilterArray}

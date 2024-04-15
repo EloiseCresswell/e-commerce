@@ -8,6 +8,7 @@ import {
   getProducts,
   getBlueProducts,
   getRedProducts,
+  getGreenProducts,
 } from "./database_files/products.js";
 
 import cors from "cors";
@@ -30,7 +31,7 @@ app.get("/products", async function (req, res) {
 });
 
 //Retrieving all the blue products from the products table
-app.get("/products/bluepots", async function (req, res) {
+app.get("/products/blue", async function (req, res) {
   try {
     console.log("Hello  blue products");
     let products = await getBlueProducts();
@@ -40,11 +41,22 @@ app.get("/products/bluepots", async function (req, res) {
   }
 });
 
-//Retrieving all the blue products from the products table
-app.get("/products/redpots", async function (req, res) {
+//Retrieving all the red products from the products table
+app.get("/products/red", async function (req, res) {
   try {
     console.log("Hello  red products");
     let products = await getRedProducts();
+    res.status(200).json({ status: "success", payload: products });
+  } catch (error) {
+    res.json({ success: false, message: error.message });
+  }
+});
+
+//Retrieving all the green products from the products table
+app.get("/products/green", async function (req, res) {
+  try {
+    console.log("Hello green products");
+    let products = await getGreenProducts();
     res.status(200).json({ status: "success", payload: products });
   } catch (error) {
     res.json({ success: false, message: error.message });

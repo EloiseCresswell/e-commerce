@@ -13,7 +13,6 @@ export default function FilterPrice({
     <>
       {/* add an onClick to run filterArray and set the other states to false */}
       <button
-        style={backgroundColour ? { color: "pink" } : {}}
         onClick={() => {
           setShowFilterArray(false),
             setShowProducts(false),
