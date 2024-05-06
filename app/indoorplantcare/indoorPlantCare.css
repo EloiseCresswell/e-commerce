@@ -6,7 +6,7 @@
 
 .indoorPlantCareIntro h1 {
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .caringForYourHousplants {
@@ -20,6 +20,15 @@
 
 .topTipsList {
   margin-left: 100px;
+  position: relative;
+}
+
+.blueBoxTrial {
+  position: relative;
+  bottom: 120px;
+  height: 120px;
+  background-color: pink;
+  max-width: 300px;
 }
 
 .bestBeginnerHouseplants {

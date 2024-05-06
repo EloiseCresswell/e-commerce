@@ -12,14 +12,12 @@ export default function Headerlinks() {
     { id: 2, label: "Plant Pots" },
     { id: 4, label: "Gifting" },
     { id: 5, label: "Blog" },
-    { id: 6, label: "Sale" },
   ];
 
   const showBox = [
-    ["potential link", "potential link2"],
-    ["trial2"],
-    ["potential link", "potential link2"],
-    ["potential link", "potential link2"],
+    ["Houseplant Care", "Beginner Houseplants"],
+    ["Pots for Sale"],
+    ["Best sellers"],
     ["potential link", "potential link2"],
   ];
 
@@ -39,6 +37,7 @@ export default function Headerlinks() {
                   onMouseLeave={() => setShowLinks(-1)}
                 >
                   <Link
+                    className={element.label}
                     href={{
                       // this changes the element to delete any white space and to lower case
                       pathname: `/${element.label
