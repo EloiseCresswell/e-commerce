@@ -15,7 +15,8 @@ export default function Trial() {
   const [showProducts, setShowProducts] = useState(true);
   const [originalData, setOriginalData] = useState([]);
   const [priceValue, setPriceValue] = useState("");
-  const [backgroundColour, setBackgroundColour] = useState(false);
+  const [filterPrice, setFilterPrice] = useState([]);
+  const [reset, setReset] = useState(false);
 
   //this function is to fetch all the products using the get request
   useEffect(() => {
@@ -116,61 +117,41 @@ export default function Trial() {
                 text="blue"
                 setShowProducts={setShowProducts}
                 setShowFilterArray={setShowFilterArray}
-                setBackgroundColour={setBackgroundColour}
+                setShowMoreButton={setShowMoreButton}
+                setReset={setReset}
               />
               <Filter
                 fetchPotsData={fetchPotsData}
                 text="red"
                 setShowProducts={setShowProducts}
                 setShowFilterArray={setShowFilterArray}
-                setBackgroundColour={setBackgroundColour}
+                setShowMoreButton={setShowMoreButton}
+                setReset={setReset}
               />
               <Filter
                 fetchPotsData={fetchPotsData}
                 text="green"
                 setShowProducts={setShowProducts}
                 setShowFilterArray={setShowFilterArray}
-                setBackgroundColour={setBackgroundColour}
+                setShowMoreButton={setShowMoreButton}
+                setReset={setReset}
               />
             </div>
+            <h4 className="headingColour">Price</h4>
             <FilterPrice
-              setShowProducts={setShowProducts}
+              originalData={originalData}
+              setFilterPrice={setFilterPrice}
               setShowFilterArray={setShowFilterArray}
-              text={"Less than £30"}
-              backgroundColour={backgroundColour}
-              setPriceValue={setPriceValue}
-              setBackgroundColour={setBackgroundColour}
-            />
-            <FilterPrice
-              setShowProducts={setShowProducts}
-              setShowFilterArray={setShowFilterArray}
-              text={"Less than £15"}
-              backgroundColour={backgroundColour}
-              setPriceValue={setPriceValue}
-              setBackgroundColour={setBackgroundColour}
-            />
-            <FilterPrice
-              setShowProducts={setShowProducts}
-              setShowFilterArray={setShowFilterArray}
-              text={"More than £15"}
-              setPriceValue={setPriceValue}
-              backgroundColour={backgroundColour}
-              setBackgroundColour={setBackgroundColour}
-            />
-            <FilterPrice
-              setShowProducts={setShowProducts}
-              setShowFilterArray={setShowFilterArray}
-              text={"More than £25"}
-              backgroundColour={backgroundColour}
-              setPriceValue={setPriceValue}
-              setBackgroundColour={setBackgroundColour}
+              reset={reset}
+              setReset={setReset}
             />
             <Filter
               fetchPotsData={fetchPotsData}
               text="Reset"
               setShowProducts={setShowProducts}
               setShowFilterArray={setShowFilterArray}
-              setBackgroundColour={setBackgroundColour}
+              setShowMoreButton={setShowMoreButton}
+              setReset={setReset}
             />
           </div>
         </div>
@@ -192,8 +173,9 @@ export default function Trial() {
             >
               {showFilterArray ? null : (
                 <FilterArray
-                  originalData={originalData}
-                  priceValue={priceValue}
+                  filterPrice={filterPrice}
+                  setShowProducts={setShowProducts}
+                  setShowMoreButton={setShowMoreButton}
                 />
               )}
 

@@ -101,3 +101,21 @@
   font-weight: 100;
   margin-top: 10px;
 }
+
+.pricesOfThings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider .range-slider__thumb {
+  background: #878f87 !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+.range-slider__range {
+  background: #878f87 !important;
+}
+
+.range-slider {
+  height: 4px !important;
+}

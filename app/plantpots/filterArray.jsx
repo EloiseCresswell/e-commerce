@@ -6,25 +6,14 @@ import "./styles.css";
 import Filter from "./filter.jsx";
 import ProductImage from "./productImage.jsx";
 
-export default function FilterArray({ originalData, priceValue }) {
-  let text = priceValue;
-  let value = priceValue.replace(/\D/g, "");
-  console.log(`value ${value}`);
-  let filterPrice = [];
-  //this looks at filtering the array based on the text, which is what the filter price button says...
-  if (text.includes("Less") || text.includes("less")) {
-    filterPrice = originalData.filter(
-      (element) => Number(element.price) < value
-    );
-  } else if (text.includes("More")) {
-    filterPrice = originalData.filter(
-      (element) => Number(element.price) > value
-    );
-  }
+export default function FilterArray({
+  setShowProducts,
+  filterPrice,
+  setShowMoreButton,
+}) {
+  console.log(`second ${filterPrice}`);
+  setShowProducts(false);
+  setShowMoreButton(false);
   //this prints out products with the given filterPrice array...
-  return (
-    <>
-      <ProductImage pots={filterPrice} />
-    </>
-  );
+  return <ProductImage pots={filterPrice} />;
 }
