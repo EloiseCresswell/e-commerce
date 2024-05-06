@@ -36,3 +36,15 @@ export async function getRedProducts() {
     throw new Error("Error fetching red products");
   }
 }
+
+//function to get products that are green from the products table
+
+export async function getGreenProducts() {
+  try {
+    const queryText = `SELECT * FROM product WHERE name LIKE '%Green%'`;
+    const result = await pool.query(queryText);
+    return result.rows;
+  } catch (error) {
+    throw new Error("Error fetching blue products");
+  }
+}

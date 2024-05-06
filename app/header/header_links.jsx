@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import "./header.css";
@@ -10,7 +10,6 @@ export default function Headerlinks() {
   const links = [
     { id: 1, label: "Indoor Plant Care" },
     { id: 2, label: "Plant Pots" },
-    { id: 3, label: "Plant Care" },
     { id: 4, label: "Gifting" },
     { id: 5, label: "Blog" },
     { id: 6, label: "Sale" },
@@ -19,7 +18,6 @@ export default function Headerlinks() {
   const showBox = [
     ["potential link", "potential link2"],
     ["trial2"],
-    ["potential link", "potential link2"],
     ["potential link", "potential link2"],
     ["potential link", "potential link2"],
     ["potential link", "potential link2"],

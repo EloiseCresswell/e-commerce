@@ -64,6 +64,7 @@ async function resetDatabase() {
           INSERT INTO product (name, price, product_photo)
           VALUES
             ('Blue plant pot', 40.99, 'blue_pot.jpeg'),
+            ('Green plant pot', 6.99, 'green_pot.webp'),
             ('Red plant pot', 4.99, 'red_pot.jpeg'),
             ('Red viking pot', 16.99, 'red_pot.jpeg'),
             ('Red pretty pot', 50.99, 'red_pot.jpeg'),
