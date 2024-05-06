@@ -11,6 +11,22 @@ export default function Trial() {
     "/images/houseplant4.jpeg",
     "/images/houseplant5.webp",
   ];
+
+  const imageLinks = [
+    "https://www.google.com",
+    "https://www.gymshark.com",
+    "https://www.nhs.com",
+    "https://www.google.com",
+    "https://www.google.com",
+  ];
+
+  const imageName = [
+    "The Philodendron plant, with its forgiving nature and lush foliage, is an ideal choice for beginner houseplant enthusiasts seeking a low-maintenance addition to their indoor spaces.",
+    "Aspidistra, known for its resilience and ability to thrive in low light conditions, is a dependable choice for indoor plant enthusiasts looking for a hardy and low-maintenance option.",
+    "The Cast Iron Plant, recognized for its robustness and ability to endure neglect, is a resilient option for indoor gardeners seeking a virtually indestructible addition to their plant collection.",
+    "Peperomia Obtusifolia, celebrated for its compact size, attractive foliage, and ease of care, is a charming choice for beginner indoor plant enthusiasts seeking a versatile and visually appealing addition to their home.",
+    "The Monstera, admired for its striking fenestrated leaves and tropical allure, is a beloved choice among indoor plant enthusiasts seeking a statement piece that adds both beauty and drama to their living spaces.",
+  ];
   return (
     <>
       <div className="indoorPlantCareIntro App">
@@ -29,7 +45,7 @@ export default function Trial() {
           botanical companions.
         </p>
       </div>
-      <div className="caringForYourHousplants">
+      <div className="caringForYourHousplants" id="houseplantcare">
         <h2>Caring For Your Houseplants</h2>
         <h3>Top Tips</h3>
         <ol className="topTipsList">
@@ -52,7 +68,11 @@ export default function Trial() {
             images inspire you to bring the refreshing touch of nature into your
             home with confidence and joy.
           </p>
-          <Carousel images={images} />
+          <Carousel
+            images={images}
+            imageLinks={imageLinks}
+            imageName={imageName}
+          />
           <p className="indoorPlantCareIntro">
             As you browse through the delightful assortment of plants showcased
             below, you might discover some that truly catch your eye and capture
