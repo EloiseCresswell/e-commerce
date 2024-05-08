@@ -1,0 +1,60 @@
+.giftingProducts {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+.plantPots {
+  display: flex;
+  justify-content: center;
+}
+
+.addToBasket {
+  background-image: url("https://static.thenounproject.com/png/1287400-200.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.cartDivider {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  width: 80%;
+}
+
+.giftingPage {
+  margin: 30px 30px 60px 30px;
+}
+
+.giftBundlesHeader {
+  margin: 25px 50px;
+  font-weight: 300;
+}
+
+.giftingHeader {
+  margin-bottom: 15px;
+}
+
+.wrappingSection {
+  width: 80%;
+  height: 100px;
+  background-color: #0b6b4e;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.wrappingSection p {
+  width: 100%;
+  font-style: italic;
+  color: white;
+}
