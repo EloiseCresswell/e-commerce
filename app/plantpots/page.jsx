@@ -33,14 +33,16 @@ export default function Trial() {
     };
     fetchData();
   }, []);
-  //using localStorage to store basket
-  const storedBasket = JSON.parse(localStorage.getItem("inBasket"));
+  //Local storage to store the basket
   const [inBasket, setInBasket] = useState([]);
-
   useEffect(() => {
     localStorage.setItem("inBasket", JSON.stringify(inBasket));
     console.log({ inBasket });
   }, [inBasket]);
+
+  //using localStorage to store basket
+  const storedBasket = JSON.parse(localStorage.getItem("inBasket"));
+
   //function to add further items to the basket array
   function addToBasket(name) {
     setInBasket([...inBasket, name]); // Updating the basket state using spread to append name onto the end of the array

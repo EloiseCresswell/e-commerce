@@ -1,0 +1,73 @@
+.BlogHeadings {
+  margin-left: 65px;
+}
+
+.BlogHeadings h2 p {
+  margin-left: 35px;
+  width: 80%;
+}
+
+.BlogCard {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.BlogCard__Carousel__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.BlogCard__Carousel__right h3 {
+  display: none;
+}
+
+.BlogCard__Carousel__right h2 {
+  font-size: 44px;
+}
+
+.BlogCard__Carousel__right p {
+  font-size: 25px;
+}
+
+.BlogCard__Carousel__right button {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.BlogCard__Carousel__left img {
+  padding-right: 30px;
+}
+
+.BlogCard__Carousel__left__author_date {
+  display: flex;
+  gap: 15px;
+}
+
+.BlogCard__Carousel__left__writings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.BlogCard__Carousel__left button {
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: auto 10px;
+  background-color: green;
+}
+
+.BlogCard__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 80px;
+}
+
+.BlogFinalPara {
+  margin-left: 60px;
+  width: 80%;
+}
